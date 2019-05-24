@@ -11,7 +11,7 @@ import feelingsdetector.services.MoodAnalyzerService;
 public class MoodAnlyzerController {
 	
 	private MoodAnalyzerService analyzer=new MoodAnalyzerService();
-	@PostMapping("/moodAnalysis")
+	@PostMapping("/")
 	public String nouveauClient(@RequestBody String text,
 								@RequestHeader("api-key") String apiKey)
 	{
